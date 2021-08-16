@@ -2,7 +2,7 @@ import { Row, Col, Form, Button } from 'react-bootstrap';
 import { useState } from 'react';
 import { useMutation } from '@apollo/client';
 import { Link, useHistory } from 'react-router-dom';
-import { REGISTER_USER } from '../../graphql/muatations';
+import { REGISTER_USER } from '../../graphql/mutations';
 
 
 interface IRegist 
