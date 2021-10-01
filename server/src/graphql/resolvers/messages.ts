@@ -36,10 +36,10 @@ module.exports = {
                 
                 return messages;
             }
-            catch (e) 
+            catch (err) 
             {
-                console.log(e);
-                throw e;
+                console.log(err);
+                throw err;
             }
         }
     },
@@ -71,10 +71,10 @@ module.exports = {
 
                 return message;
             } 
-            catch (e) 
+            catch (err) 
             {
-                console.log(e);
-                throw e;
+                console.log(err);
+                throw err;
             }
         },
         react_to_message: async (_: any, { id, content }: any, { pubsub, user }: any) =>
@@ -124,10 +124,10 @@ module.exports = {
 
                 return reaction;
             }
-            catch (e) 
+            catch (err) 
             {
-                console.log(e);
-                throw e;
+                console.log(err);
+                throw err;
             }
         }
     },

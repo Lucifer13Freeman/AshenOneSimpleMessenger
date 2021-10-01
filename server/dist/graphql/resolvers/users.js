@@ -41,9 +41,9 @@ module.exports = {
                 });
                 return users;
             }
-            catch (e) {
-                console.log(e);
-                throw e;
+            catch (err) {
+                console.log(err);
+                throw err;
             }
         },
         login: async (_, args) => {
@@ -83,9 +83,9 @@ module.exports = {
                     token
                 };
             }
-            catch (e) {
-                console.log(e);
-                throw e;
+            catch (err) {
+                console.log(err);
+                throw err;
             }
         }
     },

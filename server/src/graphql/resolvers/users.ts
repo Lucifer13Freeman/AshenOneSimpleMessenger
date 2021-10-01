@@ -56,10 +56,10 @@ module.exports = {
                 
                 return users;
             } 
-            catch (e) 
+            catch (err) 
             {
-                console.log(e);
-                throw e;
+                console.log(err);
+                throw err;
             }
         },
         login: async (_: any, args: any) =>
@@ -113,11 +113,11 @@ module.exports = {
                     ...user.toJSON(),
                     token
                 }
-            } 
-            catch (e) 
+            }
+            catch (err) 
             {
-                console.log(e);
-                throw e;
+                console.log(err);
+                throw err;
             }
         }
     },
@@ -167,7 +167,7 @@ module.exports = {
 
                 return user;
             } 
-            catch (err) 
+            catch (err: any) 
             {
                 console.log(err);
                 

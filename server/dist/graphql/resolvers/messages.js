@@ -23,9 +23,9 @@ module.exports = {
                 });
                 return messages;
             }
-            catch (e) {
-                console.log(e);
-                throw e;
+            catch (err) {
+                console.log(err);
+                throw err;
             }
         }
     },
@@ -49,9 +49,9 @@ module.exports = {
                 pubsub.publish('NEW_MESSAGE', { new_message: message });
                 return message;
             }
-            catch (e) {
-                console.log(e);
-                throw e;
+            catch (err) {
+                console.log(err);
+                throw err;
             }
         },
         react_to_message: async (_, { id, content }, { pubsub, user }) => {
@@ -88,9 +88,9 @@ module.exports = {
                 pubsub.publish('NEW_REACTION', { new_reaction: reaction });
                 return reaction;
             }
-            catch (e) {
-                console.log(e);
-                throw e;
+            catch (err) {
+                console.log(err);
+                throw err;
             }
         }
     },
